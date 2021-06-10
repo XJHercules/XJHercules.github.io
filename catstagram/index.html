@@ -9,60 +9,83 @@
         <link rel="icon" type="image/png" href="favicon.ico">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="./javascript/brains.js"></script>
+        
         <style>
             #brandfont {
-                font-family:Impact;
+                font-family: Elephant;
                 font-style: italic;
             } 
 
             #imgSize {
-             width: 300px;
-             height: 200px;  
+                width: 300px;
+                height: 200px;
+                              
             }
            
-          #styleRule
+                    
+            #caption {
+                margin-bottom: 70px; 
+            }     
+        
+            .pic-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+               
 
-          .caption: margin-bottom 70px; 
-
-        </style>
+    </style>
     
     </head>
 
     <!--VISIBLE TO THE USER-->
     <body>
-        <h1><p id=brandfont>Catstagram</p></h1>
-        <h5><p id=brandfont>Sharing the worlds cats</h5>
+        <h1>
+        <div class="pic-container"><p id=brandfont>Catstagram</p></h1>
+        <h5> <div class="pic-container">
+        <p id=brandfont>Sharing the world's cats!</h5> 
+    
+    <!-- PICTURE CONTAINER  --> 
+    <div>
+    <div class="pic-container">
         <!--cat photo 1-->
-     <img id=imgSize src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLYpGLBugUYb76eBjAW2TKa5GLsE3uLiKI7tBermBIEsZt-k:https://www.pumpkin.care/blog/wp-content/uploads/2020/11/10-Best-Celebrity-Cat-Names.jpg&usqp=CAU">
-        
-     <div id="likeCount10">Chonky princess</div>
+            <img id=imgSize src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLYpGLBugUYb76eBjAW2TKa5GLsE3uLiKI7tBermBIEsZt-k:https://www.pumpkin.care/blog/wp-content/uploads/2020/11/10-Best-Celebrity-Cat-Names.jpg&usqp=CAU">
+            <div id="likeCount1">Chonky Princess <div class="caption"></div></div>
+            <button id="likeBtn">Like</button>
+    </div>
     
-     <button id="likeBtn">Like</button> 
-    <!--cat photo 2-->
-     <img id=imgSize src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT40IUn_pePjPn6JDEwvqY9FR3xOWolrhs4rb3ePcMzz3MMhdU:https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-girl-cat-names-1606245046.jpg&usqp=CAU">
+    <div>
+    <div class="pic-container">
+        <!--cat photo 2-->
+            <img id=imgSize src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT40IUn_pePjPn6JDEwvqY9FR3xOWolrhs4rb3ePcMzz3MMhdU:https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-girl-cat-names-1606245046.jpg&usqp=CAU">
+            <div id="likeCount3">Cozy Cat <div class="caption"></div></div>
+            <button id="likeBtn">Like</button> 
+     </div>   
+    
+     <div>
+     <div class="pic-container">    
+        <!--cat photo 3-->
+            <img id=imgSize src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScacUVIdhk1ErDf-qB051XlhsbCjXHiI-eSYZp6OPF5d_aXvls-TJCV9DbXEla7w4v8OyKjMKZCudn4uKn:https://media.wired.com/photos/5cdefb92b86e041493d389df/125:94/w_1265,h_951,c_limit/Culture-Grumpy-Cat-487386121.jpg&usqp=CAU">
+            <div id="likeCount7">Grumpy as usual! <div class="caption"></div></div>
+            <button id="likeBtn">Like</button> 
+     </div>
 
-    <div id="likeCount5">Cozy cat</div>
+     <div>
+     <div class="pic-container">    
+        <!--cat photo 4-->
+            <img id=imgSize src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE38BTgliUa2a0tPFqGF9JbmsvQUhr5Tl2YYAWKag5iGIsZWeP:https://images.moneycontrol.com/static-mcnews/2020/04/cat-770x433.jpg%3Fimpolicy%3Dwebsite%26width%3D770%26height%3D431&usqp=CAU">
+            <div id="likeCount9">Cat with 2 different eye colors! <div class="caption"></div></div>
+            <button id="likeBtn">Like</button> 
+     </div>
     
-     <button id="likeBtn">Like</button> 
-    <!--cat photo 3-->
-     <img id=imgSize src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScacUVIdhk1ErDf-qB051XlhsbCjXHiI-eSYZp6OPF5d_aXvls-TJCV9DbXEla7w4v8OyKjMKZCudn4uKn:https://media.wired.com/photos/5cdefb92b86e041493d389df/125:94/w_1265,h_951,c_limit/Culture-Grumpy-Cat-487386121.jpg&usqp=CAU">
+     <div>
+     <div class="pic-container">   
+        <!--cat photo 5-->
+            <img id=imgSize src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzcH3YZqS6FlmSdsrwujIeu2qpmH2aXCnZ9HmOUdKn5vTaArvG:https://books-teneues.com/wp-content/uploads/2019/10/1908-x-798-Cat.jpg&usqp=CAU">
+            <div id="likeCount5">The great cats of the past! <div class="caption"></div></div>
+            <button id="likeBtn">Like</button> 
+     </div>
     
-     <div id="likeCount11">Grumpy as usual</div>
-    
-     <button id="likeBtn">Like</button> 
-    <!--cat photo 4-->
-     <img id=imgSize src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE38BTgliUa2a0tPFqGF9JbmsvQUhr5Tl2YYAWKag5iGIsZWeP:https://images.moneycontrol.com/static-mcnews/2020/04/cat-770x433.jpg%3Fimpolicy%3Dwebsite%26width%3D770%26height%3D431&usqp=CAU">
-
-     <div id="likeCount11">Cat with 2 different eye colors</div>
-    
-     <button id="likeBtn">Like</button> 
-    <!--cat photo 5-->
-     <img id=imgSize src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzcH3YZqS6FlmSdsrwujIeu2qpmH2aXCnZ9HmOUdKn5vTaArvG:https://books-teneues.com/wp-content/uploads/2019/10/1908-x-798-Cat.jpg&usqp=CAU">
-
-     <div id="likeCount11">The great cats of the past</div>
-    
-     <button id="likeBtn">Like</button> 
-    
-    </body>
+</body>
 
 </html>
