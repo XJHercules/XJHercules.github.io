@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: rgb(40, 0, 151);
 			font-size: 300%;
 			text-align: center;
 			display: block;
@@ -63,9 +63,10 @@
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
             function update(){
-			 positionX = positionX + 10;
-				moveBoxTo(positionX);		
-				
+			positionX = positionX + 10;
+			moveBoxTo(positionX);		
+			var points = 0
+			
 			  positionX = 0 + 10;         // positionX = 10
               moveBoxTo(positionX);
 
@@ -81,6 +82,9 @@
               positionX = 30 + 10;         // positionX = 40
               moveBoxTo(positionX);
 
+			  // Frame 5
+			  positionX = 40 + 10;         // positionX = 50
+			  moveBoxTo(positionX);
 			};
             
 			
@@ -97,7 +101,30 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+            positionX = 0;
+            
+			points = points + 1
+			
+			changeBoxText(points);
+            
+			positionX = 0 + 10;         // positionX = 10
+			moveBoxTo(positionX);
+
+			// Frame 2
+			positionX = 10 + 10;        // positionX = 20
+			moveBoxTo(positionX);
+
+			// The Box is Clicked
+			positionX = 0;              // positionX = 0
+
+			// back to update...
+			// Frame 3
+			positionX = 0 + 10;         // positionX = 10
+			moveBoxTo(positionX);
+
+			// Frame 4
+			positionX = 10 + 10;         // positionX = 20
+			moveBoxTo(positionX);
 
 
 			};
