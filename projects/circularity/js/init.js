@@ -85,7 +85,7 @@ var init = function (window) {
         game.drawCircle = drawCircle;
         game.update = update;
         
-        app.addUpdateable(window.opspark.game);
+        app.addUpdateable(window.opspark.runner);
     }
 };
 
