@@ -52,25 +52,37 @@
 			}
 
 			// changes the text displayed on the Box
-			function changeBoxText(newText) {
-				box.text(newText);
+			function changeBoxText(points) {
+				box.text(points);
 			}
 
 			//////////////////////////////////////////////////////////////////
 			/////////////////// YOUR CODE BELOW HERE /////////////////////////
-			//////////////////////////////////////////////////////////////////
+			/////////////////////////////////////git push/////////////////////////////
 			
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
-            points = 0;
+            var points = 0;
+			var speed = 10;
+			
+				
 			function update(){
-		    positionX = positionX + 10
-			moveBoxTo(positionX);
-			
-		 };
-            
-			
-
+				positionX = (positionX + speed);
+				moveBoxTo(positionX);
+							
+				if (positionX > boardWidth) {
+					positionX = boardWidth;
+					speed = (speed * -1);
+				} 
+				
+				if (positionX < 0) {
+					positionX = 0;
+					speed = 10;
+					speed = (speed * 1);
+				}
+				
+			}
+            	
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -83,11 +95,15 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-            positionX = 0;
-            points = points + 1
-			changeBoxText(points);
-
-			};
+				if (speed > 0 ){
+					handleBoxClick = (speed + 3);
+				} else {
+					handleBoxClick = (speed - 3);
+				}
+				positionX = 0;
+				points = (points + 1);
+				changeBoxText(points);
+			}
 		})();
 	</script>
 </body>

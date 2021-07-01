@@ -122,12 +122,12 @@ Lastly we save each new circle in an array using the `.push()` method. Doing so 
 
 # TODO 3 : Draw 5 circles!
 
-**FIND:** The `PROGRAM SETUP` Section and `// TODO: 3 / 7`
+**FIND:** The `PROGRAM SETUP` Section and `// TODO: 3 / 8`
 
 **CODE:** Call your new `drawCircle` Function 5 times:
 
 ```js
-// TODO 3 / 7 : Call the drawCircle() function 
+// TODO 3 / 8 : Call the drawCircle() function 
 
 /* Your Function Calls HERE */
 ```
@@ -347,7 +347,7 @@ for (var i = 0; i < myArray.length; i++) {
 ```
 How can we apply this pattern to our `circles` array? What code do we want to execute for each value?
 
-**FIND:** The `update` Function, below **TODO 8**
+**FIND:** The `update` Function, below **TODO 9**
 
 **CODE:** Follow the pattern above and create a loop that will iterate over the `circles` array and create a variable `var eachCircle` for each circle in the Array. 
 
